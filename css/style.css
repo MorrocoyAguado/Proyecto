@@ -1,0 +1,288 @@
+header {
+    background-color: white;
+        display: flex;
+    overflow: auto;
+    justify-content: center;
+   
+}
+
+.logo {
+    width: 350px;
+    
+    justify-content: center;
+
+}
+.publi {
+    width: 350px;
+    
+   
+    padding: 0px;
+   
+    
+
+}
+/*AQUI EMPIEZA MI MENU */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    background-color: rgb(44, 53, 27);
+    list-style: none;
+    margin: 0 auto;
+    padding: 0.60rem 3rem; 
+    font-family: monospace;
+    font-size: x-large;
+    flex-wrap: wrap;
+    padding: 0.60rem 3rem;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li:hover {
+    background: rgb(44, 53, 27);
+    
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+
+.nav li ul li {
+    display: block;
+    background: rgb(44, 53, 27);
+
+    
+}
+
+.nav li a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block !important;
+}
+
+.nav li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+
+.contenido ul li {
+
+list-style: none;
+}
+
+
+.nav li a:hover {
+    background-color: rgb(130, 155, 84);
+   padding-left: 30px;
+   padding-right: 30px;
+   border-radius: 30px;
+   font-weight: bold;
+
+}
+
+/*AQUI MI ASIDE, NO SE SI DEJARLO ARRIBA O ABAJO*/
+aside {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+}
+
+aside > .barrita {
+    background-color: rgb(44, 53, 27);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: large;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside > #barra {
+    font-size: x-large;
+    font-family: monospace;
+    text-align: center;
+}
+
+.barratext {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.barrita:hover {
+    background-color:  rgb(130, 155, 84);
+    font-weight: bold;
+}
+
+
+
+aside img {
+    width:200px
+}
+
+/*AQUI EMPIEZAN LAS TARJETAS*/
+
+article {
+    background-color: #e4e2dd;
+    border: 0px #2b2b2b solid;
+    width: 350px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.75);
+    border-radius: 30px
+
+
+}
+
+article a:hover {
+    background-color: rgb(44, 53, 27);;
+    font-weight: normal;
+    color:  white
+    
+    
+    
+}
+
+article a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 10px 100px / 120px;
+
+}
+
+/*Si me da problemas usar main div img*/
+main div img {
+    width: 100%;
+
+}
+
+/* ESTO CREO QUE LO VOY A BORRAR*/
+* {
+    padding: 0%;
+    margin: 0px;
+    
+
+}
+
+body {
+
+    background-image: url(../images/fondo\ .jpg);
+    margin: 0;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .contenido ul{
+        flex-grow: 1;
+    }
+/*AQUI EMPIEZA EL FOOTER*/
+    footer{ 
+        padding: 30px;
+        padding-bottom: 1px;
+        
+        background-color: #e3e2dd;
+        font-family: monospace;
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 150px;
+        padding-right: 150px;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    
+
+    footer img{
+        width: 200px;
+        height: 200px;
+    
+        
+    }
+
+    footer a {
+        color:  rgb(44, 53, 27);
+        text-decoration: none;
+    }
+
+    .mapa{
+        margin-top: 15px;
+    }
+    
+
+    /*AQUI LOS MEDIAQUERY*/
+
+    
+@media (width >= 900px) {
+    .menu{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        display: flex;
+   
+    
+    
+    }
+    .nav{
+    
+        height: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+        
+        
+    }
+}
+
+
+@media (width <= 899px) {
+    .nav{
+        padding: 10.2px;
+    }
+    .cmenu{
+        padding: 0;
+    }
+}
+
+    @media (width <= 929px) {
+       
+        footer{
+            text-align: center;
+        }
+        aside > .barrita{
+            width: 85%;
+        }
+    }
+
+    
